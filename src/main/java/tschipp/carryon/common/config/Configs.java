@@ -93,6 +93,8 @@ public class Configs
 
 		public static BooleanValue allowBabies;
 
+		public static BooleanValue allowOtherPlayersTamedPets;
+
 		public static BooleanValue useWhitelistBlocks;
 
 		public static BooleanValue useWhitelistEntities;
@@ -146,6 +148,8 @@ public class Configs
 			renderArms = c.comment("Arms should render on sides when carrying").define("renderArms", true);
 
 			allowBabies = s.comment("Allow babies to be carried even when adult mob is blacklisted (or not whitelisted)").define("allowBabies", false);
+
+			allowOtherPlayersTamedPets = s.comment("Allow players to pick up tamed entities owned by other players").define("allowOtherPlayersTamedPets", false);
 
 			useWhitelistBlocks = s.comment("Use Whitelist instead of Blacklist for Blocks").define("useWhitelistBlocks", false);
 
